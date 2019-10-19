@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.all-contents{
+    height: 1000px;
+    
+}
+.nav-bar{
+    height: 64px;
+}
+.main-container{
+   height: 836px;
+}
+
+.footer-content{
+    height: 100px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+}
+nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items : center;
+    min-height: 8vh;
+    background-color: rgba(0, 0,0, 0.5);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 64px;
+}
+.logo{
+    color: beige;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px; 
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+
+}
+.nav-links li{
+    list-style: none;
+    
+    
+}
+.nav-links a{
+    text-decoration: none;
+    color: beige;
+    font-size: 18px;
+    padding: 10px 15px;
+    
+    
+}
+.nav-links a:hover{
+    background-color: rgb(25, 233, 233);
+    color: black;
+    border-radius: 3px;
+}
+#active{
+    background-color: rgb(25, 233, 233);
+    color: black;
+    border-radius: 3px;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+     body{
+       /* overflow: hidden; */
+    }
+   .nav-links{
+       position: absolute;
+       right: 0px;
+       height: 60vh;
+       top: 8vh;
+       background-color:rgba(0, 0,0, 0.5);
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 30%;
+       transform: translateX(100%);
+
+   }
+   .nav-links li{
+       opacity: 0.9;
+   }
+   .burger{
+       display: block;
+   }
+
+
+}
+main{
+    height: 100%;
+    background-image: url("Images/f4.jpeg");
+    background-size: cover;
+    animation-name: example;
+    animation-delay: 1s;
+}
+
+@keyframes example{
+
+   }
+
+.main-title{
+    
+    text-align: center;
+    color: black
+    padding: 65px 25px;
+    font-size: 50px;
+    
+}
+/* h1.main-title{
+    top: 150px;
+} */
+
+
+footer{
+    height: 100%;
+    background-color: rgb(10,30,50);
+}
+footer > p{
+    text-align: center;
+    color: rgb(100,150,200);
+    font-size: 18px;
+    padding: 25px 25px;
+}
+
+
+
